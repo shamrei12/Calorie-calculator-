@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: url('../img/bground.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    margin: 10px 0;
+}
+
+.container {
+    width: 35%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.form {
+    background: #fff;
+    padding: 5%;
+}
+
+.sex {
+    margin-bottom: 20px;
+}
+
+.info_human {
+    margin-bottom: 20px;
+}
+
+.info_human input {
+    width: 50%;
+}
+
+.info_human {
+    display: flex;
+    justify-content: space-between
+}
+
+
+.active {
+    display: flex;
+    flex-flow: column;
+    align-items: left;
+}
+
+.active label {
+    margin: 10px 0;
+}
+
+.result {
+    background-color: #fff;
+    margin-top: 50px;
+}
