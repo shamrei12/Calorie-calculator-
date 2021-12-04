@@ -29,34 +29,34 @@
             <div class="info_human">
                 <div class="info">
                     <h3>Возраст</h3>
-                    <input type="text">
+                    <input type="text" class="human_old">
                 </div>
                 <div class="info">
                     <h3>Рост</h3>
-                    <input type="text">
+                    <input type="text" class="human_height">
                 </div>
                 <div class="info">
                     <h3>Вес</h3>
-                    <input type="text">
+                    <input type="text" class="human_weight">
                 </div>
             </div>
             <div class="info_active">
                 <h2>Физическая активность</h2>
                 <div class="active">
                     <label>
-                        <input type="radio" class="radio" name="example" />
+                        <input type="radio" class="radio" name="active" />
                         Минимальная активность
                     </label>
                     <label>
-                        <input type="radio" class="radio" name="example" />
+                        <input type="radio" class="radio" name="active" />
                         средняя активность
                     </label>
                     <label>
-                        <input type="radio" class="radio" name="example" />
+                        <input type="radio" class="radio" name="active" />
                         высокая активность
                     </label>
                     <label>
-                        <input type="radio" class="radio" name="example" />
+                        <input type="radio" class="radio" name="active" />
                         На спорте
                     </label>
                 </div>
@@ -64,7 +64,7 @@
             </div>
             <div class="button_clear_result">
                 <button class="btn">Рассчитать</button>
-                <a href="#">Очистить</a>
+                <a href="#" onclick="clear()" class="clear">Очистить</a>
             </div>
         </div>
         <div class="result">
@@ -83,7 +83,8 @@
             </div>
         </div>
     </div>
-
+<script src="js/clear.js"></script>
+<script>check()</script>
 </body>
 
 </html>
