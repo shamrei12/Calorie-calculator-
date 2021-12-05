@@ -27,19 +27,24 @@ h2 {
 
 .form {
     background: #fff;
-    padding: 5%;
+    border: 1px solid #fff;
+    border-radius: 2%;
+    padding: 9%;
 }
 
 .sex {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .info_human {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .info_human input {
-    width: 50%;
+    width: 45%;
+    height: 70%;
+    padding-left: 5px;
+    border: 1px solid #000;
 }
 
 .info_human {
@@ -47,19 +52,46 @@ h2 {
     justify-content: space-between
 }
 
-
 .active {
     display: flex;
     flex-flow: column;
     align-items: left;
+    margin-bottom: 40px;
 }
 
 .active label {
     margin: 10px 0;
 }
 
-
-.result {
+.result_none {
+    transition: 1s;
     background-color: #fff;
-    margin-top: 50px;
+    margin-top: 30px;
+    border: 1px solid #fff;
+    border-radius: 2%;
+    padding: 5%;
+    display: none;
+}
+
+.result_show {
+    transition: 1s;
+    background-color: #fff;
+    margin-top: 30px;
+    border: 1px solid #fff;
+    border-radius: 2%;
+    padding: 5%;
+}
+
+.calories_result p {
+    color: blanchedalmond;
+}
+
+.info_result {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.result h2 {
+    text-align: center;
 }

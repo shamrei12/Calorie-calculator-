@@ -63,28 +63,31 @@
 
             </div>
             <div class="button_clear_result">
-                <button class="btn">Рассчитать</button>
+                <button class="btn" onclick="btnResult()">Рассчитать</button>
                 <a href="#" onclick="clear()" class="clear">Очистить</a>
             </div>
         </div>
-        <div class="result">
+        <div class="result_none result_show">
             <h2>Рекомендации</h2>
             <div class="info_result">
-                <div class="calories_result">
+                <div class="calories_result ">
                     <h3>Поддержание веса</h3>
+                    <p class="maintaining-weight">Поддержание веса</p>
                 </div>
-                <div class="calories_result">
+                <div class="calories_result ">
                     <h3>Набор веса</h3>
+                    <p class="weight-gain">Набор веса</p>
                 </div>
-                <div class="calories_result">
+                <div class="calories_result weight-loss">
                     <h3>Снижение веса</h3>
+                    <p class="weight-loss">Снижение веса</p>
                 </div>
 
             </div>
         </div>
     </div>
-<script src="js/clear.js"></script>
-<script>check()</script>
+    <script src="js/clear.js"></script>
+    <script src="js/result.js"></script>
 </body>
 
 </html>
