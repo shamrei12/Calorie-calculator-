@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: Ubuntu;
 }
 
 body {
@@ -12,39 +13,48 @@ body {
 }
 
 h1 {
+    margin-top: 15px;
     text-align: center;
+    font-size: 42px;
+    font-weight: 700;
 }
 
 h2 {
+    font-size: 22px;
     margin: 10px 0;
+}
+h3{
+    font-size: 19px;
+}
+span {
+    font-size: 13px;
+    color: gray;
 }
 
 .container {
-    width: 35%;
+    width: 30%;
     margin: 0 auto;
     padding: 0 10px;
 }
 
 .form {
+    width: 100%;
     background: #fff;
     border: 1px solid #fff;
     border-radius: 2%;
-    padding: 9%;
+    padding: 5%;
 }
 
 .sex {
     margin-bottom: 30px;
 }
+.toogle{
+    display: flex;
+    justify-content: space-around;
+}
 
 .info_human {
     margin-bottom: 50px;
-}
-
-.info_human input {
-    width: 45%;
-    height: 70%;
-    padding-left: 5px;
-    border: 1px solid #000;
 }
 
 .info_human {
@@ -52,6 +62,15 @@ h2 {
     justify-content: space-between
 }
 
+
+.info_human input {
+    width: 35%;
+    height: 70%;
+    padding-left: 5px;
+    border: 1px solid #000;
+}
+
+/* блок вывода активности*/
 .active {
     display: flex;
     flex-flow: column;
@@ -63,31 +82,39 @@ h2 {
     margin: 10px 0;
 }
 
+
+.button_clear_result{
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: center;
+}
+.btn{
+    width: 35%;
+    height: 40px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+/* блок вывода результатов*/
 .result_none {
-    transition: 1s;
-    background-color: #fff;
-    margin-top: 30px;
-    border: 1px solid #fff;
-    border-radius: 2%;
-    padding: 5%;
     display: none;
 }
 
 .result_show {
     transition: 1s;
     background-color: #fff;
-    margin-top: 30px;
+    margin-top: 20px;
     border: 1px solid #fff;
     border-radius: 2%;
     padding: 5%;
 }
 
 .calories_result p {
-    color: blanchedalmond;
+    color: gray;
 }
 
 .info_result {
-    margin-top: 30px;
+    margin-top: 10px;
     display: flex;
     justify-content: space-around;
 }

@@ -11,6 +11,7 @@ const active = document.getElementsByName("active");
 
 var showResult = document.querySelector(".result_none");
 clear.onclick = function () {
+
   showResult.classList.add("result_none");
 
   for (let i = 0; i < sex.length; i++) {
@@ -24,4 +25,5 @@ clear.onclick = function () {
   weight.value = "";
   old.value = "";
   height.value = "";
+
 };

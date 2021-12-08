@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
     <title>Счетчик калорий</title>
 </head>
 
@@ -28,15 +31,15 @@
             </div>
             <div class="info_human">
                 <div class="info">
-                    <h3>Возраст</h3>
+                    <h3>Возраст<span>лет</span></h3>
                     <input type="text" class="human_old">
                 </div>
                 <div class="info">
-                    <h3>Рост</h3>
+                    <h3>Рост<span>см</span></h3>
                     <input type="text" class="human_height">
                 </div>
                 <div class="info">
-                    <h3>Вес</h3>
+                    <h3>Вес<span>кг</span></h3>
                     <input type="text" class="human_weight">
                 </div>
             </div>
@@ -45,26 +48,26 @@
                 <div class="active">
                     <label>
                         <input type="radio" class="radio" name="active" />
-                        Минимальная активность
+                        Минимальный уровень активность
                     </label>
                     <label>
                         <input type="radio" class="radio" name="active" />
-                        средняя активность
+                        Слабый уровень активности
                     </label>
                     <label>
                         <input type="radio" class="radio" name="active" />
-                        высокая активность
+                        Умеренный уровень активности
                     </label>
                     <label>
                         <input type="radio" class="radio" name="active" />
-                        На спорте
+                        Высокий уровень активности
                     </label>
                 </div>
 
             </div>
             <div class="button_clear_result">
                 <button class="btn" onclick="btnResult()">Рассчитать</button>
-                <a href="#" onclick="clear()" class="clear">Очистить</a>
+                <a href="#" onclick="clear()" class="clear">Очистить результат и поля</a>
             </div>
         </div>
         <div class="result_none result_show">
