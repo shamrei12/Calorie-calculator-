@@ -9,21 +9,19 @@ var sex = document.getElementsByName("example");
 //active human
 const active = document.getElementsByName("active");
 
-clear.onclick = function() {
-    //clear radio sex
+var showResult = document.querySelector(".result_none");
+clear.onclick = function () {
+  showResult.classList.add("result_none");
 
-    for (let i = 0; i < sex.length; i++) {
-        sex[i].checked = false;
-    }
-    //clear radio activ
+  for (let i = 0; i < sex.length; i++) {
+    sex[i].checked = false;
+  }
+  //clear radio activ
 
-    for (let i = 0; i < active.length; i++) {
-        active[i].checked = false;
-    }
-    weight.value = '';
-    old.value = '';
-    height.value = '';
-
-    let maintaining = document.querySelector('.')
-
+  for (let i = 0; i < active.length; i++) {
+    active[i].checked = false;
+  }
+  weight.value = "";
+  old.value = "";
+  height.value = "";
 };
